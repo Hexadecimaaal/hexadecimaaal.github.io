@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Press Start 2P Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Press Start 2P Regular'), url('../font/press-start-2p/woff2/PressStart2P-Regular.woff') format('woff');
+  }
