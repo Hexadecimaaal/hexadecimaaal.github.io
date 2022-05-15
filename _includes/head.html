@@ -32,10 +32,16 @@
   <!-- To automatically render math in text elements, include the auto-render extension: -->
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
       onload="renderMathInElement(document.body, {
+        // customised options
+        // • auto-render specific keys, e.g.:
         delimiters: [
-            {left: '\\[', right: '\\]', display: true},
-            {left: '\\(', right: '\\)', display: false}
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
         ],
+        // • rendering keys, e.g.:
+        throwOnError : false,
         macros: {
           '\\dif' : '\\operatorname{d \\!}',
           '\\Dif' : '\\operatorname{D \\!}'

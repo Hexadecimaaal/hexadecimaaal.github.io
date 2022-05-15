@@ -79,7 +79,7 @@ kbd,
 samp,
 pre
   +han-typeface-by-lang( mono )
-  font-feature-settings: "calt", "XV00"
+  @extend %han-no-locl
 
 // * Fonts for alternative voice and variable
 // * in different situations.
@@ -117,7 +117,7 @@ h-ruby
     font-family: 'Romanization Sans', $han-sans, han-typeface( 'Han Heiti', $han-glyph-set-hant, $han-sans-zh ), sans-serif
 
 // fix shitty parameters.
-h-char 
+h-char
   &.bd-open,
   &.bd-close
     position: relative
